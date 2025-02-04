@@ -13,27 +13,34 @@ function App(){
 
   
 
-  const addvalue = () => {
+  function addvalue(){
     
-
-    counter += 1
-    
-    if(counter > 20){
+    if(counter >= 20){
       counter = 20
+      setCounter(counter)
     }
+    else{
+      counter += 1
 
     setCounter(counter)
+    }
+
+    
     
   }
 
-  const decvalue = () => {
-    counter -= 1
+  function decvalue(){
     if(counter <= 0){
       counter = 0
+      setCounter(counter)
     }
+    else{
+
+    counter -= 1
+
     setCounter(counter)
   }
-
+}
   
   
 
