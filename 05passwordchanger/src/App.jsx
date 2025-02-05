@@ -16,7 +16,7 @@ function App() {
   const [password,setPassword] = useState("")
 
   //useRef hook
-  const passwordRef = useRef(null)
+  
 
   const passwordGenerator = useCallback(() => {
     let pass = ""
@@ -97,7 +97,7 @@ function App() {
       <div className='flex justify-center'>
         <div className='bg-gray-600 w-200 max-w-2xl rounded-3xl px-10 py-5 h-35 my-18 flex flex-wrap'>
           
-          <input className='w-125 h-8.5 bg-amber-50 rounded-l-xl text-2xl text-black text-center ' placeholder='password' input='text' value={password} readOnly ref={passwordRef}/>
+          <input className='w-125 h-8.5 bg-amber-50 rounded-l-xl text-2xl text-black text-center ' placeholder='password' input='text' value={password} readOnly/>
             
           
           
