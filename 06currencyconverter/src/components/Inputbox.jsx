@@ -48,7 +48,7 @@ function InputBox({
           className="rounded-lg px-1 py-1 bg-gray-100 cursor-pointer outline-none"
 
           value={selectCurrency}
-          onChange={(e) => {onCurrencyChange && onCurrencyChange(e.target.value)}}
+          onChange={(e) => {onCurrencyChange && onCurrencyChange(e.target.value)}}//Yaha pe aap jo bhi input de rahe ho wo waha wo input parameters mein jaata hai.
           disabled={currencyDisable}
 
         >
