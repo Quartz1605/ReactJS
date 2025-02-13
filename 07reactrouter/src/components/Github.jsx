@@ -18,7 +18,7 @@ export default function Github(){
 
   return(
     <>
-      <h1 className="bg-pink-200 text-center m-4 bg-gray-600 text-white p-4 text-3xl">Github followers : {data.followers}</h1>
+      <h1 className="bg-pink-200 text-center m-4 text-white p-4 text-3xl">Github followers : {data.followers}</h1>
      <div className='flex gap-15'>
         <img src={data.avatar_url} className='w-50 rounded-lg mb-4'></img>
         <p>Name : {data.name}</p>
